@@ -1,0 +1,101 @@
+создаем новую директорию в git и копируем ее директорию https://github.com/polxot/MF-shop-online.git
+git clone https://github.com/polxot/MF-shop-online.git -создание папки проекта с помощью git
+====================================================================================================
+             ====Если есть папка с проектом====
+git init
+git add .
+git commit -m "comment"
+
+git remote add origin адрес_репозитория - его мы берем на github (code => HTMl =>копируем ссылку)
+heat_ivrit
+
+https://github.com/polxot/heat_ivrit.git
+===============================================================================================
+git branch develop   -создание новой ветки (develop)
+git checkout develop -переключение на ветку (develop)
+git branch           -просмотр всех веток
+git push origin  develop   -отправка данных на репозиторий (ветка develop)
+================================================================================================
+           ====Базовая структура папок для проекта=====
+index.html
+src -папка для хранения стилей,картинок...
+ scss   -папка для стилей
+  index.scss -файл для стилей
+ assets -папка для картинок
+  logo.png   -файл лого
+================================================================================================
+            ====Перемещение папок и файлов в git ====
+git status  -отслеживание созданных папок и файлов, изменение в них
+git add .   -добавление всех файлов
+git commit -m "commentaries" -запись добавленных файлов
+git log                      -просмотр истории коммитов
+git push origin  develop   -отправка данных на репозиторий (ветка develop)
+================================================================================================
+            ====SCSS====
+ 1. установить nod.js  
+ 2. npm init -y   -создание файла package.json      
+    npm install node-sass   -установка   node-sass 
+ 3. заносим изменения в GitHub  
+      1.git status
+      2.git add .
+      3.git commit -m "npm init and install node-sass"
+      4.git push origin develop
+ 4. ==автоматическое создание файлов на основе SCSS== 
+   1.Как скомпилировать или преобразовать sass/scss в css с помощью node-sass (без Ruby)?
+   https://stackoverflow.com/questions/31448114/how-to-compile-or-convert-sass-scss-to-css-with-node-sass-no-ruby  
+   2.новая запись в package.json = "scripts"
+     "styles": "node-sass -w sass ./src/scss -o ./src/css"
+   3.npm run styles -запуск скрипта  "styles"
+ 5.== Установка BrowserSync==
+    -npm install -g browser-sync -команда установки
+    "browsersync": "browser-sync start --server --files '**/*'" -запись в скрит для запуска
+    3.npm run browsersync -запуск скрипта browsersync
+
+=====================================================================================================
+===Верстка проекта====
+1.Разбить на блоки
+  1-1. header-navigation
+  1-2. header
+  1-3. super-product
+  1-4. special-products
+  1-5. info-blocs
+  1-6. sponsors
+  1-7. recently-watched-products
+  1-8. footer
+  1-9. copyright
+2.Выделить общие элементы
+  2-1. product-card
+  2-2. sponsor-item
+  2-3. info-block
+  2-4. callback-blocs
+  2-5. default-button
+3.Выделить общие цвета
+   в sccc создаем папку:
+  - constants - => constants.scss
+  создаем постоянные цвета кот есть на сайте:
+$primary1: #F13C6E;
+$primary2: #ffffff;
+$primary3: #efefef;
+
+$title-text-color:#000000;
+$link-text-color:#000000;
+$main-text-color:#ffffff;
+$info-text-color:#333333;
+==========создание глобальных стилей=======
+1. создаем  папку в scss- 
+   global => global.scss
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

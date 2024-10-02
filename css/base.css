@@ -1,0 +1,95 @@
+@import '../fonts/font.css';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	bottom: 0;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Noto Sans Hebrew Condensed', Arial, Helvetica, sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scrollbar-color: #62fc02 #0522fc;
+}
+
+body {
+	background: url('./../img/base/bg.png')no-repeat center center fixed;
+	background-size: cover;
+
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+i {
+	color: #5e02fb;
+}
+
+/* img {
+	max-width: 100%;
+	height: auto;
+} */
+hr {
+	border: 1px solid royalblue;
+}
+
+h1 {
+	font-size: 3.5rem;
+
+	font-weight: 900;
+	color: blue;
+}
+
+h4 {
+	font-size: 2rem;
+	font-weight: 600;
+	font-style: italic;
+	color: #28ab00;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left
+}
+.right {
+	text-align: right
+}
+
+
+p {
+	text-indent: 20px;
+	/* Отступ первой строки в пикселах */
+	font-size: 1.4rem;
+	line-height: 1.5rem;
+}
+
+a {
+	font-size: 1.8rem;
+}
+.targilim {
+	width: 450px;
+}
+.lina {
+	color: #03fa2c;
+}
+.fa-youtube {
+	color: red;
+	font-size: 3rem;
+}
+.none {
+	display: none;
+}
+.metod__3-3-3 {
+	color: #03fa2c;
+	text-shadow: 2px 2px #558ABB;;
+}
+

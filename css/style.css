@@ -1,0 +1,13 @@
+@import './base.css';
+
+
+
+@import './bloks/menu.css';
+@import './bloks/first.css';
+@import './bloks/content.css';
+
+@import './bloks/button_page.css';
+@import './bloks/buten_home.css';
+
+@import './bloks/mobil.css';
+

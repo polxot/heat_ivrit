@@ -1,0 +1,73 @@
+/* внешний вид меню */
+.side {
+	width: 40%;
+	margin: 5px 100px;
+}
+.menu a  {
+	background: #01065a;
+	color:#fff;
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid #b9b4b4;
+	transition: 15s all;
+}
+.menu a:hover {
+	background: #878cee;
+	padding: 10px 0 10px 20px;
+}
+.menu li:last-child a,
+.menu li .menu__drop li:last-child a {
+	border-radius: 5px 5px 5px 5px;
+}
+.menu li:first-child a,
+.menu li .menu__drop li:first-child a {
+	border-radius: 5px 5px 5px 5px ;
+	/* border-bottom: 0; */
+}
+.menu li .menu__drop li a {
+	border-radius: 0;
+	border-bottom: 1px solid #b9b4b4;
+}
+
+/* всплывающее меню */
+.menu__list {
+	position: relative;
+}
+
+.menu__drop {
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	top: 9999em;
+	opacity: 0;
+	border-left: 10px solid transparent;
+	transition: 5s opacity;
+}
+.menu__drop span {
+	color:red;
+}
+.menu__list span {
+	color:red;
+}
+
+.menu__list:hover .menu__drop {
+	opacity: 1;
+	top: 0;
+}
+/* иконки для всплывающих меню */
+.menu__list::after {
+	content: " ";
+	position: absolute;
+	border: 5px solid;
+	border-color: transparent transparent transparent #fff;
+	top: 0.5em;
+	right: 0.5em;
+	transition: 1s;
+}
+.menu__list:hover::after {
+	transform: scale(-1);
+}
+
+
+
+
